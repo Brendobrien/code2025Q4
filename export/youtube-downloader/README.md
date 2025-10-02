@@ -1,5 +1,10 @@
 # 🎥⬇️ YouTube Audio Downloader
 
+```
+pipenv install
+prp main.py
+```
+
 This script downloads audio from YouTube videos, adds metadata, and converts them to .m4a format with album art.
 
 ## Features

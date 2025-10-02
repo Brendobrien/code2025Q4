@@ -237,7 +237,7 @@ def download_youtube_video_720p(url: str, videoObj: any, useVideoObj: bool):
 
     print(video.title)
 
-    output_file = f"{video.publish_date.strftime("%Y-%m-%d")} - {video.title}.mp4"
+    output_file = f"{video.publish_date.strftime('%Y-%m-%d')} - {video.title}.mp4"
     logging.info(f"Downloading {output_file}...")
 
     # Get the audio stream

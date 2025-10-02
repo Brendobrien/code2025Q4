@@ -4,8 +4,9 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-pytubefix = "*"
 requests = "*"
+certifi = "*"
+pytubefix = "*"
 
 [dev-packages]
 
