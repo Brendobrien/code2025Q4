@@ -23,12 +23,13 @@ def compress(caption, max_words=4):
 
 def main():
     p = argparse.ArgumentParser()
-    p.add_argument("--dir", required=True, help="Folder of images")
-    p.add_argument("--hint", default="", help="Optional context, e.g. 'Jordan People'")
+    p.add_argument("dir", help="Folder of images")   # positional
+    p.add_argument("--hint", default="", help="Optional context")
     p.add_argument("--exts", default=".jpg,.jpeg,.png,.heic")
     p.add_argument("--dry", action="store_true")
     p.add_argument("--overwrite", action="store_true")
     args = p.parse_args()
+    args.dir = os.path.expanduser(args.dir)
 
     device = "mps" if torch.backends.mps.is_available() else ("cuda" if torch.cuda.is_available() else "cpu")
     processor = BlipProcessor.from_pretrained("Salesforce/blip-image-captioning-base")
