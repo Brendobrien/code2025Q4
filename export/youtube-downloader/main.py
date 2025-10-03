@@ -199,12 +199,16 @@ def remove_fixed_suffix():
 
 
 def get_audio_for_youtube_playlist():
-    artist = "J.K. Rowling"
-    year = "1997"
-    album = "Harry Potter dan Batu Bertuah"
+    # artist = "J.K. Rowling"
+    # year = "1997"
+    # album = "Harry Potter dan Batu Bertuah"
+    # "https://www.youtube.com/playlist?list=PL3Z2GzUD5TnX0cCZRmOBfTTg9r2pWHeHt"
 
+    artist = "Youtube"
+    year = "2025"
+    album = "Brendan OBrien"
     playlist_url = (
-        "https://www.youtube.com/playlist?list=PL3Z2GzUD5TnX0cCZRmOBfTTg9r2pWHeHt"
+        "https://www.youtube.com/playlist?list=PLZ81_TikBBITZxfbFUGbD1cF1O5d91jTf"
     )
 
     session = create_session()
@@ -265,15 +269,15 @@ def download_youtube_video_720p(url: str, videoObj: any, useVideoObj: bool):
     logging.info(f"Successfully downloaded and combined")
 
 def main():
+    get_audio_for_youtube_playlist()
+
     # channel_url = "https://www.youtube.com/@twostraws"
     # channel_url = "https://www.youtube.com/@swiftandtips"
     # channel_url = "https://www.youtube.com/@tundsdev"
     # channel_url = "https://www.youtube.com/@SwiftfulThinking"
     # get_videos_from_youtube_channel(channel_url)
 
-    # download_youtube_video_720p("https://www.youtube.com/watch?v=75-c6jSE8kU", "", False)
     download_youtube_video_720p("https://www.youtube.com/watch?v=LRlSjdTuHWY", "", False)
-    download_youtube_video_720p("https://www.youtube.com/watch?v=2VvoLlk0_88", "", False)
 
 if __name__ == "__main__":
     main()
