@@ -8,6 +8,7 @@ certifi = "*"
 pytubefix = "*"
 google-auth-oauthlib = "*"
 requests = "*"
+yt-dlp = "*"
 
 [dev-packages]
 
