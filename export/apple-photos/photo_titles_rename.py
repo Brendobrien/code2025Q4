@@ -43,10 +43,22 @@ def main():
         path = os.path.join(args.dir, f)
         try:
             img = Image.open(path).convert("RGB")
-            prompt = f"{args.hint}. a concise photo description:" if args.hint else "a concise photo description:"
-            inputs = processor(img, text=prompt, return_tensors="pt").to(device)
+            if args.hint:
+                inputs = processor(img, text=args.hint, return_tensors="pt").to(device)
+            else:
+                inputs = processor(img, return_tensors="pt").to(device)
+
             out = model.generate(**inputs, max_new_tokens=20)
-            caption = processor.decode(out[0], skip_special_tokens=True)
+            caption = processor.decode(out[0], skip_special_tokens=True).strip()
+            
+            words = caption.split()
+            seen, clean = set(), []
+            for w in words:
+                lw = w.lower().strip(",.")
+                if lw not in seen:
+                    seen.add(lw)
+                    clean.append(w)
+            caption = " ".join(clean)
 
             short = compress(caption, max_words=4)
             base = slugify(f"{args.hint} {short}".strip()) if args.hint else slugify(short)
