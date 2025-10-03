@@ -220,20 +220,22 @@ def get_audio_for_youtube_playlist():
 
 
 def get_videos_from_youtube_channel(channel_url):
-    """Get all video URLs from a YouTube channel. Have to combine video and audio for 720p"""
+    """Get all video URLs from a YouTube channel. Have to combine video and audio"""
     try:
         channel = Channel(channel_url)
         video_urls = channel.video_urls
         logging.info(f"Number of videos in channel: {len(video_urls)}")
         for i in range(0, len(channel.videos)):
             video = channel.videos[i]
-            download_youtube_video_720p("", video, True)
+            download_youtube_video("", video, True)
             
     except Exception as e:
         logging.error(f"Error downloading videos from channel: {e}")
         return []
     
-def download_youtube_video_720p(url: str, videoObj: any, useVideoObj: bool):
+def download_youtube_video(url: str, videoObj: any, useVideoObj: bool):
+    # resolution = '720p'
+    resolution = '1080p'
     video = videoObj
     if useVideoObj != True:
         yt = YouTube(url, on_progress_callback=on_progress)
@@ -254,7 +256,7 @@ def download_youtube_video_720p(url: str, videoObj: any, useVideoObj: bool):
     os.rename(temp_audio_file, audio_file)
     logging.info(f"File renamed to: {audio_file}")
     
-    video_stream = video.streams.filter(resolution='720p').first()
+    video_stream = video.streams.filter(resolution=resolution).first()
     video_file = video_stream.download()
     logging.info(f"Video downloaded:\n{video_file}")
 
@@ -269,7 +271,7 @@ def download_youtube_video_720p(url: str, videoObj: any, useVideoObj: bool):
     logging.info(f"Successfully downloaded and combined")
 
 def main():
-    get_audio_for_youtube_playlist()
+    # get_audio_for_youtube_playlist()
 
     # channel_url = "https://www.youtube.com/@twostraws"
     # channel_url = "https://www.youtube.com/@swiftandtips"
@@ -277,7 +279,8 @@ def main():
     # channel_url = "https://www.youtube.com/@SwiftfulThinking"
     # get_videos_from_youtube_channel(channel_url)
 
-    download_youtube_video_720p("https://www.youtube.com/watch?v=LRlSjdTuHWY", "", False)
+    url = "https://www.youtube.com/watch?v=fZC-IR5kl1U"
+    download_youtube_video(url, "", False)
 
 if __name__ == "__main__":
     main()
