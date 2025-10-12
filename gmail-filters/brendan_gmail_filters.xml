@@ -1,0 +1,614 @@
+<?xml version="1.0" ?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:apps="http://schemas.google.com/apps/2006">
+	<title>Mail Filters</title>
+	<id>tag:mail.google.com,2008:filters:95a8077d-9ad9-4ccd-bb3f-00812a4f1286</id>
+	<updated>2024-03-17T02:00:05Z</updated>
+	<author>
+		<name>Brendan O'Brien</name>
+		<email>obrienpbrendan@gmail.com</email>
+	</author>
+	<entry>
+		<category term="filter"/>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:d7d37f81-2538-41fe-9875-01fc64173199</id>
+		<updated>2024-03-17T02:00:05Z</updated>
+		<content/>
+		<apps:property name="hasTheWord" value="&quot;@1password.com&quot;"/>
+		<apps:property name="label" value="*2025/1Password"/>
+		<apps:property name="shouldMarkAsRead" value="true"/>
+		<apps:property name="sizeOperator" value="s_sl"/>
+		<apps:property name="sizeUnit" value="s_smb"/>
+	</entry>
+	<entry>
+		<category term="filter"/>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:6056a071-0a42-4c2a-b48c-442bec481028</id>
+		<updated>2024-03-17T02:00:05Z</updated>
+		<content/>
+		<apps:property name="hasTheWord" value="&quot;@airbnb.com&quot;"/>
+		<apps:property name="label" value="*2025/AirBnb"/>
+		<apps:property name="shouldMarkAsRead" value="true"/>
+		<apps:property name="sizeOperator" value="s_sl"/>
+		<apps:property name="sizeUnit" value="s_smb"/>
+	</entry>
+	<entry>
+		<category term="filter"/>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:22a5d11f-4614-417d-b588-3a373b5a3d7a</id>
+		<updated>2024-03-17T02:00:05Z</updated>
+		<content/>
+		<apps:property name="hasTheWord" value="&quot;gc-orders&quot; OR &quot;giftcardsales@giftcards.amazon.com&quot;"/>
+		<apps:property name="label" value="*2025/Amazon Gift Cards"/>
+		<apps:property name="shouldMarkAsRead" value="true"/>
+		<apps:property name="sizeOperator" value="s_sl"/>
+		<apps:property name="sizeUnit" value="s_smb"/>
+	</entry>
+	<entry>
+		<category term="filter"/>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:90aac1b9-53a0-4453-a97c-9a0e6563caec</id>
+		<updated>2024-03-17T02:00:05Z</updated>
+		<content/>
+		<apps:property name="hasTheWord" value="&quot;@amazon.com&quot; OR &quot;@audible.com&quot; OR &quot;@primevideo.com&quot; OR &quot;@onemedical.com&quot; OR &quot;wholefoodsmarket.com&quot; OR &quot;chick-fil-a.com&quot;"/>
+		<apps:property name="doesNotHaveTheWord" value="&quot;gc-orders&quot; OR &quot;giftcardsales@giftcards.amazon.com&quot;"/>
+		<apps:property name="label" value="*2025/Amazon"/>
+		<apps:property name="shouldMarkAsRead" value="true"/>
+		<apps:property name="sizeOperator" value="s_sl"/>
+		<apps:property name="sizeUnit" value="s_smb"/>
+	</entry>
+	<entry>
+		<category term="filter"/>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:425cb6c0-6014-49f5-9f86-9ad25e99b348</id>
+		<updated>2024-03-17T02:00:05Z</updated>
+		<content/>
+		<apps:property name="hasTheWord" value="&quot;americanexpress.com&quot;"/>
+		<apps:property name="label" value="*2025/American Express"/>
+		<apps:property name="shouldMarkAsRead" value="true"/>
+		<apps:property name="sizeOperator" value="s_sl"/>
+		<apps:property name="sizeUnit" value="s_smb"/>
+	</entry>
+	<entry>
+		<category term="filter"/>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:19c9890f-8601-4dea-b736-185d7393a379</id>
+		<updated>2024-03-17T02:00:05Z</updated>
+		<content/>
+		<apps:property name="hasTheWord" value="&quot;PostNet TX221&quot;"/>
+		<apps:property name="label" value="*2025/Anytime Mailbox"/>
+		<apps:property name="shouldMarkAsRead" value="true"/>
+		<apps:property name="sizeOperator" value="s_sl"/>
+		<apps:property name="sizeUnit" value="s_smb"/>
+	</entry>
+	<entry>
+		<category term="filter"/>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:22e248f4-5d7b-42bd-b770-1882a977b254</id>
+		<updated>2024-03-17T02:00:05Z</updated>
+		<content/>
+		<apps:property name="hasTheWord" value="&quot;.apple.com&quot; OR &quot;Your receipt from Apple&quot; OR &quot;Find My app&quot;"/>
+		<apps:property name="doesNotHaveTheWord" value="&quot;FemFast&quot; OR &quot;Mavely&quot;"/>
+		<apps:property name="label" value="*2025/Apple"/>
+		<apps:property name="shouldMarkAsRead" value="true"/>
+		<apps:property name="sizeOperator" value="s_sl"/>
+		<apps:property name="sizeUnit" value="s_smb"/>
+	</entry>
+	<entry>
+		<category term="filter"/>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:495e543a-e1fb-4422-9748-148cd9556a61</id>
+		<updated>2024-03-17T02:00:05Z</updated>
+		<content/>
+		<apps:property name="hasTheWord" value="&quot;@balidirectstore.com&quot; OR &quot;Bali Direct&quot;"/>
+		<apps:property name="label" value="*2025/Bali Direct"/>
+		<apps:property name="shouldMarkAsRead" value="true"/>
+		<apps:property name="sizeOperator" value="s_sl"/>
+		<apps:property name="sizeUnit" value="s_smb"/>
+	</entry>
+	<entry>
+		<category term="filter"/>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:620af64c-1557-435c-8b20-ca3d1544bf1b</id>
+		<updated>2024-03-17T02:00:05Z</updated>
+		<content/>
+		<apps:property name="hasTheWord" value="&quot;.bankofamerica.com&quot;"/>
+		<apps:property name="label" value="*2025/Bank Of America"/>
+		<apps:property name="shouldMarkAsRead" value="true"/>
+		<apps:property name="sizeOperator" value="s_sl"/>
+		<apps:property name="sizeUnit" value="s_smb"/>
+	</entry>
+	<entry>
+		<category term="filter"/>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:da670c8c-5cff-4c90-b3d4-ac1948ec09b3</id>
+		<updated>2024-03-17T02:00:05Z</updated>
+		<content/>
+		<apps:property name="hasTheWord" value="&quot;.barclaysus.com&quot;"/>
+		<apps:property name="label" value="*2025/Barclays"/>
+		<apps:property name="shouldMarkAsRead" value="true"/>
+		<apps:property name="sizeOperator" value="s_sl"/>
+		<apps:property name="sizeUnit" value="s_smb"/>
+	</entry>
+	<entry>
+		<category term="filter"/>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:cc72b4ee-d6be-4066-b928-7bdcfdb261ef</id>
+		<updated>2024-03-17T02:00:05Z</updated>
+		<content/>
+		<apps:property name="hasTheWord" value="&quot;@booking.com&quot;"/>
+		<apps:property name="label" value="*2025/Booking.com"/>
+		<apps:property name="shouldMarkAsRead" value="true"/>
+		<apps:property name="sizeOperator" value="s_sl"/>
+		<apps:property name="sizeUnit" value="s_smb"/>
+	</entry>
+	<entry>
+		<category term="filter"/>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:3ee93a00-216f-4b84-a7ec-34d3f02cec07</id>
+		<updated>2024-03-17T02:00:05Z</updated>
+		<content/>
+		<apps:property name="hasTheWord" value="&quot;.capitalone.com&quot; OR &quot;capitalonebooking.com&quot;"/>
+		<apps:property name="label" value="*2025/CapitalOne"/>
+		<apps:property name="shouldMarkAsRead" value="true"/>
+		<apps:property name="sizeOperator" value="s_sl"/>
+		<apps:property name="sizeUnit" value="s_smb"/>
+	</entry>
+	<entry>
+		<category term="filter"/>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:d0eee729-5dad-4f8b-8420-dcea05e8d2b2</id>
+		<updated>2024-03-17T02:00:05Z</updated>
+		<content/>
+		<apps:property name="hasTheWord" value="&quot;.chase.com&quot;"/>
+		<apps:property name="label" value="*2025/Chase"/>
+		<apps:property name="shouldMarkAsRead" value="true"/>
+		<apps:property name="sizeOperator" value="s_sl"/>
+		<apps:property name="sizeUnit" value="s_smb"/>
+	</entry>
+	<entry>
+		<category term="filter"/>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:668fade8-168a-439d-8f25-47f2dc33d7fc</id>
+		<updated>2024-03-17T02:00:05Z</updated>
+		<content/>
+		<apps:property name="hasTheWord" value="&quot;.citi.com&quot;"/>
+		<apps:property name="label" value="*2025/Citi"/>
+		<apps:property name="shouldMarkAsRead" value="true"/>
+		<apps:property name="sizeOperator" value="s_sl"/>
+		<apps:property name="sizeUnit" value="s_smb"/>
+	</entry>
+	<entry>
+		<category term="filter"/>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:afa2ccf2-2c3d-465d-8b26-76b74f5bf1ab</id>
+		<updated>2024-03-17T02:00:05Z</updated>
+		<content/>
+		<apps:property name="hasTheWord" value="&quot;github.com&quot; OR &quot;udemy.com&quot; OR &quot;npmjs.com&quot; OR &quot;heroku.com&quot; OR &quot;docker.com&quot; OR &quot;figma.com&quot; OR &quot;githubsupport.com&quot; OR &quot;wetransfer.com&quot; OR &quot;warp.dev&quot; OR &quot;udemymail.com&quot; OR &quot;gitbook.com&quot; OR &quot;mongodb.com&quot; OR &quot;fig.io&quot; OR &quot;openai.com&quot; OR &quot;squarespace.com&quot; OR &quot;meta.com&quot; OR &quot;anthropic.com&quot; OR &quot;Stewart Lynch&quot; OR &quot;@expo.dev&quot; OR &quot;agorapulse.com&quot;"/>
+		<apps:property name="label" value="*2025/Code"/>
+		<apps:property name="shouldMarkAsRead" value="true"/>
+		<apps:property name="sizeOperator" value="s_sl"/>
+		<apps:property name="sizeUnit" value="s_smb"/>
+	</entry>
+	<entry>
+		<category term="filter"/>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:d7a6b5c6-41b8-4612-8dac-d9b427c2fb49</id>
+		<updated>2024-03-17T02:00:05Z</updated>
+		<content/>
+		<apps:property name="hasTheWord" value="&quot;@docomo-cycle.jp&quot;"/>
+		<apps:property name="label" value="*2025/CycleShare"/>
+		<apps:property name="shouldMarkAsRead" value="true"/>
+		<apps:property name="sizeOperator" value="s_sl"/>
+		<apps:property name="sizeUnit" value="s_smb"/>
+	</entry>
+	<entry>
+		<category term="filter"/>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:b02c6c4d-7bbc-4bc0-a586-5abf71424199</id>
+		<updated>2024-03-17T02:00:05Z</updated>
+		<content/>
+		<apps:property name="hasTheWord" value="&quot;@dropbox.com&quot;"/>
+		<apps:property name="label" value="*2025/Dropbox"/>
+		<apps:property name="shouldMarkAsRead" value="true"/>
+		<apps:property name="sizeOperator" value="s_sl"/>
+		<apps:property name="sizeUnit" value="s_smb"/>
+	</entry>
+	<entry>
+		<category term="filter"/>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:bc93ab52-1de4-4655-8ab2-3767a28293b0</id>
+		<updated>2024-03-17T02:00:05Z</updated>
+		<content/>
+		<apps:property name="hasTheWord" value="&quot;enterprise.com&quot;"/>
+		<apps:property name="label" value="*2025/Enterprise"/>
+		<apps:property name="shouldMarkAsRead" value="true"/>
+		<apps:property name="sizeOperator" value="s_sl"/>
+		<apps:property name="sizeUnit" value="s_smb"/>
+	</entry>
+	<entry>
+		<category term="filter"/>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:2ba8f373-b7e0-4dd2-b7e8-8f9df5bedd70</id>
+		<updated>2024-03-17T02:00:05Z</updated>
+		<content/>
+		<apps:property name="hasTheWord" value="&quot;espn.com&quot; OR &quot;espnmail.com&quot;"/>
+		<apps:property name="label" value="*2025/ESPN"/>
+		<apps:property name="shouldMarkAsRead" value="true"/>
+		<apps:property name="sizeOperator" value="s_sl"/>
+		<apps:property name="sizeUnit" value="s_smb"/>
+	</entry>
+	<entry>
+		<category term="filter"/>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:dea64e7b-767b-44bf-ac9a-e267ac5fa17b</id>
+		<updated>2024-03-17T02:00:05Z</updated>
+		<content/>
+		<apps:property name="hasTheWord" value="&quot;FemFast&quot;"/>
+		<apps:property name="label" value="*2025/FemFast"/>
+		<apps:property name="shouldMarkAsRead" value="true"/>
+		<apps:property name="sizeOperator" value="s_sl"/>
+		<apps:property name="sizeUnit" value="s_smb"/>
+	</entry>
+	<entry>
+		<category term="filter"/>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:b4eec066-104e-4ddc-8cf3-29719eecb553</id>
+		<updated>2024-03-17T02:00:05Z</updated>
+		<content/>
+		<apps:property name="hasTheWord" value="&quot;aa.com&quot; OR &quot;flightconnections.com&quot; OR &quot;spirit-airlines.com&quot; OR &quot;united.com&quot; OR &quot;delta.com&quot; OR &quot;aircanada.ca&quot; OR &quot;avianca.com&quot; OR &quot;jetblue.com&quot; OR &quot;flyasiana.com&quot; OR &quot;egyptair.com&quot; OR &quot;aerolineas.com.ar&quot; OR &quot;tap.pt&quot; OR &quot;finnair.com&quot; OR &quot;latam.com&quot; OR &quot;singaporeair.com&quot; OR &quot;flycemair.co.za&quot; OR &quot;voeazul.com.br&quot; OR &quot;ana.co.jp&quot; OR &quot;capitalonebooking.com&quot; OR &quot;vietjetair.com&quot; OR &quot;expedia.com&quot; OR &quot;flyaircairo.com&quot; OR &quot;citilink-notification.com&quot; OR &quot;flybreeze.com&quot; OR &quot;transnusa.co.id&quot; OR &quot;omio.com&quot; OR &quot;flytap.com&quot; OR &quot;philippineairlines.com&quot; OR &quot;hawaiianair&quot; OR &quot;dublinairport.com&quot; OR &quot;airhelp.com&quot; OR &quot;neosair.it&quot; OR &quot;evaair.com&quot; OR &quot;airasia.com&quot; OR &quot;citilink-indonesia.com&quot; OR &quot;aircanada.com&quot; OR &quot;cathaypacific.com&quot; OR &quot;jetstar.com&quot; OR &quot;mycebupacific.com&quot; OR &quot;aerlingus.com&quot; OR &quot;alaskaair.com&quot; OR &quot;spirit.com&quot; OR &quot;copaair.com&quot; OR &quot;aegeanair.com&quot; OR &quot;transavia.com&quot; OR &quot;ryanair.com&quot; OR &quot;vueling.com&quot; OR &quot;easyjet.com&quot; OR &quot;turkishairlines.com&quot; OR &quot;airasia.com&quot; OR &quot;vueling.com&quot;"/>
+		<apps:property name="doesNotHaveTheWord" value="&quot;alerts@services.barclaysus.com&quot; OR &quot;citicards@&quot;"/>
+		<apps:property name="label" value="*2025/Flights"/>
+		<apps:property name="shouldMarkAsRead" value="true"/>
+		<apps:property name="sizeOperator" value="s_sl"/>
+		<apps:property name="sizeUnit" value="s_smb"/>
+	</entry>
+	<entry>
+		<category term="filter"/>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:07399dc2-ae24-430b-a07c-2610e1c2977f</id>
+		<updated>2024-03-17T02:00:05Z</updated>
+		<content/>
+		<apps:property name="hasTheWord" value="&quot;@skool.com&quot;"/>
+		<apps:property name="label" value="*2025/Freedive"/>
+		<apps:property name="shouldMarkAsRead" value="true"/>
+		<apps:property name="sizeOperator" value="s_sl"/>
+		<apps:property name="sizeUnit" value="s_smb"/>
+	</entry>
+	<entry>
+		<category term="filter"/>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:205995be-b186-40af-8ccf-dd743aaf7797</id>
+		<updated>2024-03-17T02:00:05Z</updated>
+		<content/>
+		<apps:property name="hasTheWord" value="&quot;@chess.com&quot;"/>
+		<apps:property name="label" value="*2025/Games"/>
+		<apps:property name="shouldMarkAsRead" value="true"/>
+		<apps:property name="sizeOperator" value="s_sl"/>
+		<apps:property name="sizeUnit" value="s_smb"/>
+	</entry>
+	<entry>
+		<category term="filter"/>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:53de44c6-3cd2-4727-b89e-f5cb0dd6a30c</id>
+		<updated>2024-03-17T02:00:05Z</updated>
+		<content/>
+		<apps:property name="hasTheWord" value="&quot;gojek.com&quot; OR &quot;go-jek.com&quot; OR &quot;go-pay.co.id&quot;"/>
+		<apps:property name="label" value="*2025/Gojek"/>
+		<apps:property name="shouldMarkAsRead" value="true"/>
+		<apps:property name="sizeOperator" value="s_sl"/>
+		<apps:property name="sizeUnit" value="s_smb"/>
+	</entry>
+	<entry>
+		<category term="filter"/>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:a29e42c8-3a3e-4dc5-808a-17048eec9241</id>
+		<updated>2024-03-17T02:00:05Z</updated>
+		<content/>
+		<apps:property name="hasTheWord" value="&quot;@google.com&quot; OR &quot;analytics-google.com&quot; OR &quot;CloudPlatform-google.com&quot; OR &quot;domains-google.com&quot; OR &quot;accounts.google.com&quot;"/>
+		<apps:property name="doesNotHaveTheWord" value="&quot;googleplay-google.com&quot; OR &quot;Zeit Calendar&quot;"/>
+		<apps:property name="label" value="*2025/Google"/>
+		<apps:property name="shouldMarkAsRead" value="true"/>
+		<apps:property name="sizeOperator" value="s_sl"/>
+		<apps:property name="sizeUnit" value="s_smb"/>
+	</entry>
+	<entry>
+		<category term="filter"/>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:552aef7b-14db-4039-8238-794a903cb405</id>
+		<updated>2024-03-17T02:00:05Z</updated>
+		<content/>
+		<apps:property name="hasTheWord" value="&quot;googleplay-google.com&quot;"/>
+		<apps:property name="label" value="*2025/Google Play"/>
+		<apps:property name="shouldMarkAsRead" value="true"/>
+		<apps:property name="sizeOperator" value="s_sl"/>
+		<apps:property name="sizeUnit" value="s_smb"/>
+	</entry>
+	<entry>
+		<category term="filter"/>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:a45ea47e-5f87-487e-b749-36ec0e64dab6</id>
+		<updated>2024-03-17T02:00:05Z</updated>
+		<content/>
+		<apps:property name="hasTheWord" value="&quot;@grab.com&quot;"/>
+		<apps:property name="label" value="*2025/Grab"/>
+		<apps:property name="shouldMarkAsRead" value="true"/>
+		<apps:property name="sizeOperator" value="s_sl"/>
+		<apps:property name="sizeUnit" value="s_smb"/>
+	</entry>
+	<entry>
+		<category term="filter"/>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:a41898be-5c60-4ddd-91bc-5d9c3c7e6bb7</id>
+		<updated>2024-03-17T02:00:05Z</updated>
+		<content/>
+		<apps:property name="hasTheWord" value="&quot;@japanesepod101.com&quot;"/>
+		<apps:property name="label" value="*2025/JapanesePod101"/>
+		<apps:property name="shouldMarkAsRead" value="true"/>
+		<apps:property name="sizeOperator" value="s_sl"/>
+		<apps:property name="sizeUnit" value="s_smb"/>
+	</entry>
+	<entry>
+		<category term="filter"/>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:6c7e01fd-d71f-4af0-8192-4279facc921f</id>
+		<updated>2024-03-17T02:00:05Z</updated>
+		<content/>
+		<apps:property name="hasTheWord" value="&quot;Mantra Wellness Center&quot;"/>
+		<apps:property name="label" value="*2025/Mantra"/>
+		<apps:property name="shouldMarkAsRead" value="true"/>
+		<apps:property name="sizeOperator" value="s_sl"/>
+		<apps:property name="sizeUnit" value="s_smb"/>
+	</entry>
+	<entry>
+		<category term="filter"/>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:63310d9c-b3c8-4846-89e5-67f632859845</id>
+		<updated>2024-03-17T02:00:05Z</updated>
+		<content/>
+		<apps:property name="hasTheWord" value="&quot;Mavely&quot; OR &quot;MyFavoriteThings&quot;"/>
+		<apps:property name="label" value="*2025/Mavely"/>
+		<apps:property name="shouldMarkAsRead" value="true"/>
+		<apps:property name="sizeOperator" value="s_sl"/>
+		<apps:property name="sizeUnit" value="s_smb"/>
+	</entry>
+	<entry>
+		<category term="filter"/>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:1ffde17f-b2c6-4dfe-a7d4-6b75565509fe</id>
+		<updated>2024-03-17T02:00:05Z</updated>
+		<content/>
+		<apps:property name="hasTheWord" value="&quot;intuit.com&quot; OR &quot;experian.com&quot; OR &quot;revolut.com&quot; OR &quot;t-mobile.com&quot; OR &quot;sofi.org&quot; OR &quot;square.com&quot; OR &quot;ovo.co.id&quot; OR &quot;track1099.com&quot; OR &quot;crypto.com&quot; OR &quot;transunion.com&quot; OR &quot;sofi.com&quot; OR &quot;vanguard.com&quot; OR &quot;.wellsfargo.com&quot; OR &quot;financialaidantitrustsettlement.com&quot; OR &quot;@ovo.id&quot; OR &quot;freetaxusa.com&quot;"/>
+		<apps:property name="label" value="*2025/Money"/>
+		<apps:property name="shouldMarkAsRead" value="true"/>
+		<apps:property name="sizeOperator" value="s_sl"/>
+		<apps:property name="sizeUnit" value="s_smb"/>
+	</entry>
+	<entry>
+		<category term="filter"/>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:679413ba-aa73-4808-a9bf-d4cbcd5047c9</id>
+		<updated>2024-03-17T02:00:05Z</updated>
+		<content/>
+		<apps:property name="hasTheWord" value="&quot;peacocktv.com&quot; OR &quot;umrelief.org&quot; OR &quot;Rejuvie Clinic&quot; OR &quot;regaltickets.com&quot; OR &quot;amctheatres.com&quot; OR &quot;btmcinemas.com&quot; OR &quot;independentpicturehouse.org&quot; OR &quot;shopmoment.com&quot; OR &quot;starbucks.com&quot; OR &quot;@islandorganicsbali.com&quot; OR &quot;@mobal.com&quot;"/>
+		<apps:property name="label" value="*2025/Orders"/>
+		<apps:property name="shouldMarkAsRead" value="true"/>
+		<apps:property name="sizeOperator" value="s_sl"/>
+		<apps:property name="sizeUnit" value="s_smb"/>
+	</entry>
+	<entry>
+		<category term="filter"/>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:58dc4943-0f54-40c3-ac77-c8aa183f2eee</id>
+		<updated>2024-03-17T02:00:05Z</updated>
+		<content/>
+		<apps:property name="hasTheWord" value="&quot;disneyaccount.com&quot; OR &quot;accountprotection.microsoft.com&quot; OR &quot;new login&quot; OR &quot;confirm your email address&quot;"/>
+		<apps:property name="label" value="*2025/Passwords"/>
+		<apps:property name="shouldMarkAsRead" value="true"/>
+		<apps:property name="sizeOperator" value="s_sl"/>
+		<apps:property name="sizeUnit" value="s_smb"/>
+	</entry>
+	<entry>
+		<category term="filter"/>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:e00c5d44-409f-4295-af13-77045ac02ddb</id>
+		<updated>2024-03-17T02:00:05Z</updated>
+		<content/>
+		<apps:property name="hasTheWord" value="&quot;Jarred Kotzin from Almost a musing&quot; OR &quot;@18birdies-updates.com&quot;"/>
+		<apps:property name="label" value="*2025/People"/>
+		<apps:property name="shouldMarkAsRead" value="true"/>
+		<apps:property name="sizeOperator" value="s_sl"/>
+		<apps:property name="sizeUnit" value="s_smb"/>
+	</entry>
+	<entry>
+		<category term="filter"/>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:e7a1ce54-3bce-426f-b342-94592182d3fe</id>
+		<updated>2024-03-17T02:00:05Z</updated>
+		<content/>
+		<apps:property name="hasTheWord" value="&quot;@permatabank.co.id&quot;"/>
+		<apps:property name="label" value="*2025/Permata"/>
+		<apps:property name="shouldMarkAsRead" value="true"/>
+		<apps:property name="sizeOperator" value="s_sl"/>
+		<apps:property name="sizeUnit" value="s_smb"/>
+	</entry>
+	<entry>
+		<category term="filter"/>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:ef42713b-c74d-4f6e-9218-acf80251e429</id>
+		<updated>2024-03-17T02:00:05Z</updated>
+		<content/>
+		<apps:property name="hasTheWord" value="&quot;@ramahgolfbali.com&quot;"/>
+		<apps:property name="label" value="*2025/Ramah"/>
+		<apps:property name="shouldMarkAsRead" value="true"/>
+		<apps:property name="sizeOperator" value="s_sl"/>
+		<apps:property name="sizeUnit" value="s_smb"/>
+	</entry>
+	<entry>
+		<category term="filter"/>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:f80558e5-953f-45d8-8f4a-55ac3f8890dc</id>
+		<updated>2024-03-17T02:00:05Z</updated>
+		<content/>
+		<apps:property name="hasTheWord" value="&quot;@toptal.com&quot;"/>
+		<apps:property name="label" value="*2025/Recruiters"/>
+		<apps:property name="shouldMarkAsRead" value="true"/>
+		<apps:property name="sizeOperator" value="s_sl"/>
+		<apps:property name="sizeUnit" value="s_smb"/>
+	</entry>
+	<entry>
+		<category term="filter"/>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:f08224ce-f4a9-43ef-b69f-fe35b358be90</id>
+		<updated>2024-03-17T02:00:05Z</updated>
+		<content/>
+		<apps:property name="hasTheWord" value="&quot;@robinhood.com&quot;"/>
+		<apps:property name="label" value="*2025/Robinhood"/>
+		<apps:property name="shouldMarkAsRead" value="true"/>
+		<apps:property name="sizeOperator" value="s_sl"/>
+		<apps:property name="sizeUnit" value="s_smb"/>
+	</entry>
+	<entry>
+		<category term="filter"/>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:35ca06fd-d4ff-4d55-86dd-5c3a84e78af1</id>
+		<updated>2024-03-17T02:00:05Z</updated>
+		<content/>
+		<apps:property name="hasTheWord" value="&quot;fantasypros.com&quot; OR &quot;guillotineleagues.com&quot; OR &quot;udisc.com&quot; OR &quot;@18birdies-updates.com&quot;"/>
+		<apps:property name="label" value="*2025/Sports"/>
+		<apps:property name="shouldMarkAsRead" value="true"/>
+		<apps:property name="sizeOperator" value="s_sl"/>
+		<apps:property name="sizeUnit" value="s_smb"/>
+	</entry>
+	<entry>
+		<category term="filter"/>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:74ab9a8b-7185-4aa1-9858-d07c014af307</id>
+		<updated>2024-03-17T02:00:05Z</updated>
+		<content/>
+		<apps:property name="hasTheWord" value="&quot;@timeleft.com&quot;"/>
+		<apps:property name="label" value="*2025/Timeleft"/>
+		<apps:property name="shouldMarkAsRead" value="true"/>
+		<apps:property name="sizeOperator" value="s_sl"/>
+		<apps:property name="sizeUnit" value="s_smb"/>
+	</entry>
+	<entry>
+		<category term="filter"/>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:8dfccb07-d313-4cfc-bed2-db4dd354513a</id>
+		<updated>2024-03-17T02:00:05Z</updated>
+		<content/>
+		<apps:property name="hasTheWord" value="&quot;imglobal.com&quot; OR &quot;prioritypass.com&quot; OR &quot;holafly.com&quot; OR &quot;qeeq.com&quot; OR &quot;hertz.com&quot; OR &quot;europcar.com&quot; OR &quot;global-rent-a-car.pt&quot; OR &quot;avisbudget.com&quot; OR &quot;agoda.com&quot; OR &quot;starlink.com&quot; OR &quot;kakaocorp.com&quot; OR &quot;mobal.com&quot; OR &quot;omanair_reservations&quot;"/>
+		<apps:property name="label" value="*2025/Travel"/>
+		<apps:property name="shouldMarkAsRead" value="true"/>
+		<apps:property name="sizeOperator" value="s_sl"/>
+		<apps:property name="sizeUnit" value="s_smb"/>
+	</entry>
+	<entry>
+		<category term="filter"/>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:66a87d40-244c-40cd-ad1f-82c71f74f7df</id>
+		<updated>2024-03-17T02:00:05Z</updated>
+		<content/>
+		<apps:property name="hasTheWord" value="&quot;@trip.com&quot;"/>
+		<apps:property name="label" value="*2025/Trip.com"/>
+		<apps:property name="shouldMarkAsRead" value="true"/>
+		<apps:property name="sizeOperator" value="s_sl"/>
+		<apps:property name="sizeUnit" value="s_smb"/>
+	</entry>
+	<entry>
+		<category term="filter"/>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:22476eaf-6c55-4077-a3a8-42f16ef645d1</id>
+		<updated>2024-03-17T02:00:05Z</updated>
+		<content/>
+		<apps:property name="hasTheWord" value="&quot;@uber.com&quot; OR &quot;lyftmail.com&quot; OR &quot;@mgx.cabify.com&quot;"/>
+		<apps:property name="label" value="*2025/Uber"/>
+		<apps:property name="shouldMarkAsRead" value="true"/>
+		<apps:property name="sizeOperator" value="s_sl"/>
+		<apps:property name="sizeUnit" value="s_smb"/>
+	</entry>
+	<entry>
+		<category term="filter"/>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:2cec274c-8eed-412f-b69e-923fa2b4d47a</id>
+		<updated>2024-03-17T02:00:05Z</updated>
+		<content/>
+		<apps:property name="hasTheWord" value="&quot;usaa.com&quot;"/>
+		<apps:property name="label" value="*2025/USAA"/>
+		<apps:property name="shouldMarkAsRead" value="true"/>
+		<apps:property name="sizeOperator" value="s_sl"/>
+		<apps:property name="sizeUnit" value="s_smb"/>
+	</entry>
+	<entry>
+		<category term="filter"/>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:609bfd66-c80e-445f-9025-37fe6fe766f1</id>
+		<updated>2024-03-17T02:00:05Z</updated>
+		<content/>
+		<apps:property name="hasTheWord" value="&quot;venmo.com&quot; OR &quot;synchronybank.com&quot; OR &quot;synchronyfinancial.com&quot;"/>
+		<apps:property name="label" value="*2025/Venmo"/>
+		<apps:property name="shouldMarkAsRead" value="true"/>
+		<apps:property name="sizeOperator" value="s_sl"/>
+		<apps:property name="sizeUnit" value="s_smb"/>
+	</entry>
+	<entry>
+		<category term="filter"/>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:698793cc-b9d4-4f1e-bd4f-71477fecd8cb</id>
+		<updated>2024-03-17T02:00:05Z</updated>
+		<content/>
+		<apps:property name="hasTheWord" value="&quot;dhamma.org&quot;"/>
+		<apps:property name="label" value="*2025/Vipassana"/>
+		<apps:property name="shouldMarkAsRead" value="true"/>
+		<apps:property name="sizeOperator" value="s_sl"/>
+		<apps:property name="sizeUnit" value="s_smb"/>
+	</entry>
+	<entry>
+		<category term="filter"/>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:71aab6a5-20f0-43ac-b619-3788e0306d4c</id>
+		<updated>2024-03-17T02:00:05Z</updated>
+		<content/>
+		<apps:property name="hasTheWord" value="&quot;wise.com&quot;"/>
+		<apps:property name="label" value="*2025/Wise"/>
+		<apps:property name="shouldMarkAsRead" value="true"/>
+		<apps:property name="sizeOperator" value="s_sl"/>
+		<apps:property name="sizeUnit" value="s_smb"/>
+	</entry>
+	<entry>
+		<category term="filter"/>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:9f47c607-33b1-4b7c-b67d-46ee2b7849a5</id>
+		<updated>2024-03-17T02:00:05Z</updated>
+		<content/>
+		<apps:property name="hasTheWord" value="&quot;cc.yahoo-inc.com&quot;"/>
+		<apps:property name="label" value="*2025/Yahoo"/>
+		<apps:property name="shouldMarkAsRead" value="true"/>
+		<apps:property name="sizeOperator" value="s_sl"/>
+		<apps:property name="sizeUnit" value="s_smb"/>
+	</entry>
+	<entry>
+		<category term="filter"/>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:2420a209-5397-46b2-9fcf-7db2d426cdfd</id>
+		<updated>2024-03-17T02:00:05Z</updated>
+		<content/>
+		<apps:property name="hasTheWord" value="&quot;markrobberds.com&quot;"/>
+		<apps:property name="label" value="*2025/Yoga"/>
+		<apps:property name="shouldMarkAsRead" value="true"/>
+		<apps:property name="sizeOperator" value="s_sl"/>
+		<apps:property name="sizeUnit" value="s_smb"/>
+	</entry>
+	<entry>
+		<category term="filter"/>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:e32f215a-f193-459c-8f33-5cf08b4c0e7d</id>
+		<updated>2024-03-17T02:00:05Z</updated>
+		<content/>
+		<apps:property name="hasTheWord" value="&quot;@youtube.com&quot;"/>
+		<apps:property name="label" value="*2025/YouTube"/>
+		<apps:property name="shouldMarkAsRead" value="true"/>
+		<apps:property name="sizeOperator" value="s_sl"/>
+		<apps:property name="sizeUnit" value="s_smb"/>
+	</entry>
+</feed>
