@@ -1,11 +1,11 @@
 // BIG - change this to your timezone offset
 // set to GMT+0800 (Central Indonesia Time)
 // NOTE - this can be negative
-const timeZoneOffsetInHours = 8
+const timeZoneOffsetInHours = 8;
 
-const calendarTimeoutTime = 1500
-const addToCardTimeoutTime = 3000
-const rerunScriptTimeoutTime = 7000
+const calendarTimeoutTime = 1500;
+const addToCardTimeoutTime = 3000;
+const rerunScriptTimeoutTime = 7000;
 
 // The maximum size of an amazon cart is 50
 const startingCounter = 0;
@@ -22,11 +22,11 @@ function csvToArray(str, delimiter = ",") {
 
   // Split the input into lines, then extract and split the header line.
   const lines = str.split("\n");
-  const headers = lines[0].split(delimiter).map(header => header.trim());
+  const headers = lines[0].split(delimiter).map((header) => header.trim());
 
   // Map each line to an object, using the headers for property names.
-  return lines.slice(1).map(line => {
-    const values = line.split(delimiter).map(value => value.trim());
+  return lines.slice(1).map((line) => {
+    const values = line.split(delimiter).map((value) => value.trim());
     return headers.reduce((obj, header, index) => {
       obj[header] = values[index];
       return obj;
@@ -39,12 +39,12 @@ console.log(dataArray);
 console.log(dataArray[0]);
 
 function incrementCounter(callback) {
-  chrome.storage.local.get(['counter'], function(result) {
+  chrome.storage.local.get(["counter"], function (result) {
     // Default to starting counter if undefined
     let currentCounter = result.counter || startingCounter;
     currentCounter++;
-    chrome.storage.local.set({counter: currentCounter}, function() {
-      console.log('Counter value is now ' + currentCounter);
+    chrome.storage.local.set({ counter: currentCounter }, function () {
+      console.log("Counter value is now " + currentCounter);
       if (callback) callback(currentCounter);
     });
   });
@@ -71,7 +71,7 @@ function getTimestampFromBday(bdayStr, timeZoneOffsetInHours) {
 /**
  * Function that opens the amazon calendar
  * to the appropriate page to allow the birthday to be pressed
- * @param {string} bdayStr 
+ * @param {string} bdayStr
  */
 function useBirthdayCalendar(bdayStr) {
   // Click the date input to open the calendar
@@ -82,7 +82,10 @@ function useBirthdayCalendar(bdayStr) {
   const targetDate = new Date(bdayStr);
 
   // Calculate the difference in months between the current date and the target date
-  let monthDiff = (targetDate.getFullYear() - currentDate.getFullYear()) * 12 + targetDate.getMonth() - currentDate.getMonth();
+  let monthDiff =
+    (targetDate.getFullYear() - currentDate.getFullYear()) * 12 +
+    targetDate.getMonth() -
+    currentDate.getMonth();
 
   // Ensure monthDiff is non-negative
   monthDiff = Math.max(monthDiff, 0);
@@ -113,30 +116,38 @@ function getTimestampFromBday(bdayStr, timeZoneOffsetInHours) {
 
 // Process and set document elements based on CSV data
 function processAndSetData(i) {
-  const bdayData = dataArray[i]
-  document.getElementById('gc-order-form-recipients').value = bdayData.Email;
+  const bdayData = dataArray[i];
+  document.getElementById("gc-order-form-recipients").value = bdayData.Email;
 
-  if (bdayData['B&G'] === 'X') {
-    document.getElementById("gc-order-form-senderName").value = "Grayson & Brendan";
-    document.getElementById('gc-order-form-message').value = `Happy Bday ${bdayData['First Name']} from Grayson and Brendan`;
+  if (bdayData["B&G"] === "X") {
+    document.getElementById("gc-order-form-senderName").value =
+      "Grayson & Brendan";
+    document.getElementById(
+      "gc-order-form-message"
+    ).value = `Happy Bday ${bdayData["First Name"]} from Grayson and Brendan`;
   } else {
-    document.getElementById("gc-order-form-senderName").value = "Brendan OBrien";
-    document.getElementById('gc-order-form-message').value = `Happy Bday ${bdayData['First Name']} from Brendan O`;
+    document.getElementById("gc-order-form-senderName").value =
+      "Brendan OBrien";
+    document.getElementById(
+      "gc-order-form-message"
+    ).value = `Happy Bday ${bdayData["First Name"]} from Brendan O`;
   }
 
-  useBirthdayCalendar(bdayData.Birthday)
+  useBirthdayCalendar(bdayData.Birthday);
   setTimeout(() => {
-    const bdayTimestamp = getTimestampFromBday(bdayData.Birthday, 8)
-    console.log(bdayTimestamp)
-    document.getElementsByClassName(`a-cal-d a-cal-d-${bdayTimestamp}`)[0].children[0].click();
+    const bdayTimestamp = getTimestampFromBday(bdayData.Birthday, 8);
+    console.log(bdayTimestamp);
+    document
+      .getElementsByClassName(`a-cal-d a-cal-d-${bdayTimestamp}`)[0]
+      .children[0].click();
     document.getElementById("gc-buy-box-atc").click();
   }, calendarTimeoutTime);
 }
 
 // Example of a function to check if an element is available
 function fillFormAndSubmit() {
-  console.log("Fill Out Form and Submit")
-  chrome.storage.local.get(['counter'], function(result) {
+  console.log("Fill Out Form and Submit");
+  chrome.storage.local.get(["counter"], function (result) {
     // Default to starting counter if undefined
     let counter = result.counter || startingCounter;
     console.log("Fill Out Form and Submit");
@@ -146,14 +157,14 @@ function fillFormAndSubmit() {
 
     if (!document.getElementById("gc-order-form-custom-amount")) {
       // Wait and try again
-      window.location.href = 'https://www.amazon.com/gp/product/B0D1TK5XVL';
+      window.location.href = "https://www.amazon.com/gp/product/B0D1TK5XVL";
       incrementCounter();
       setTimeout(fillFormAndSubmit, rerunScriptTimeoutTime);
       return;
     }
 
     // Your code to set values and click the button
-    document.getElementById("gc-order-form-custom-amount").value = 20
+    document.getElementById("gc-order-form-custom-amount").value = 20;
 
     // This series of events allows the browser to focus on the custom amount input bar.
     // This is the only way to un-click the default $50 value upon form submission
@@ -166,12 +177,12 @@ function fillFormAndSubmit() {
     element.dispatchEvent(evt);
 
     // Create a blur event
-    var blurEvt = new FocusEvent('blur');
+    var blurEvt = new FocusEvent("blur");
     // Dispatch the blur event
     element.dispatchEvent(blurEvt);
 
     // Then create a focus event
-    var focusEvt = new FocusEvent('focus');
+    var focusEvt = new FocusEvent("focus");
     // Dispatch the focus event
     element.dispatchEvent(focusEvt);
 
@@ -181,8 +192,8 @@ function fillFormAndSubmit() {
     // This adds to cart
     setTimeout(() => {
       document.getElementById("gc-buy-box-atc").click();
-    }, addToCardTimeoutTime)
-  })
+    }, addToCardTimeoutTime);
+  });
 }
 
 // Trigger the automation when the page is loaded
