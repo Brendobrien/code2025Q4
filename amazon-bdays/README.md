@@ -1,5 +1,7 @@
 ## Dec 29 2025 15:47 WITA
 
+104 + 2 B&G = 106
+
 ## Jan 19 2025 12:26
 
 ## Jan 21 2025 15:00
@@ -25,10 +27,13 @@ Delete in bulk each these columns until only these rename
 B
 Rename columns to "First Name,Last Name,Birthday,Email"
 Add B&G column with "X" to Amazon B&G 🎁 and add to contacts-amazon.csv
+Might need to add a "," to the end of the file
 
 C
-Change all "Birthday"s to the current year (i.e "2025")
+Change all "Birthday"s to the previous year (i.e "2025")
 split into 4 files by date - (Q1, Q2, etc.)
+This will show the "git diff" to see what's changed - commit that
+then change to current year (i.e. "2026") and commit again
 ```
 
 ### 03 RUN CHROME EXTENSION
