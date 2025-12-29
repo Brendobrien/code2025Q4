@@ -13,7 +13,9 @@ const counterMax = 51;
 
 const csvData = `
 First Name,Last Name,Birthday,Email,B&G
-Sam,Selig,2024-01-30,jsamselig@gmail.com,
+Spencer,Bruno,2026-01-01,spencerbruno17@gmail.com,
+Christian,Brady,2026-01-05,Christianbradyvi@gmail.com,
+Diane,West Prophet,2026-01-05,diane.west.prophet@gmail.com,
 `;
 
 function csvToArray(str, delimiter = ",") {
