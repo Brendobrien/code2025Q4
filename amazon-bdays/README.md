@@ -62,7 +62,18 @@ PURCHASE - move to next Q
 
 # Archive 🗄️
 
-## Dec 30 2025 7:00-9:11 WITA
+## Dec 30 2025 7:00-11:49 WITA
+
+```
+01
+Ali's birthday was 1994 not 2026
+so it sent right away
+something to look out for
+
+02
+Can only do a year in advance
+so Q4 => Jan 1
+```
 
 ```js
 URL NEW

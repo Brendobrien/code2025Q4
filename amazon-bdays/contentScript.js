@@ -10,6 +10,7 @@ const addToCardTimeoutTime = 3000;
 const startingCounter = 0;
 const counterMax = 51;
 
+// URL - https://www.amazon.com/dp/B0FLDMPWBR?th=1&gpo=20
 const csvData = `
 First Name,Last Name,Birthday,Email,B&G
 Spencer,Bruno,2026-01-01,spencerbruno17@gmail.com,
