@@ -5,7 +5,6 @@ const timeZoneOffsetInHours = 8;
 
 const calendarTimeoutTime = 1500;
 const addToCardTimeoutTime = 3000;
-const rerunScriptTimeoutTime = 7000;
 
 // The maximum size of an amazon cart is 50
 const startingCounter = 0;
@@ -14,8 +13,6 @@ const counterMax = 51;
 const csvData = `
 First Name,Last Name,Birthday,Email,B&G
 Spencer,Bruno,2026-01-01,spencerbruno17@gmail.com,
-Christian,Brady,2026-01-05,Christianbradyvi@gmail.com,
-Diane,West Prophet,2026-01-05,diane.west.prophet@gmail.com,
 `;
 
 function csvToArray(str, delimiter = ",") {
@@ -77,7 +74,7 @@ function getTimestampFromBday(bdayStr, timeZoneOffsetInHours) {
  */
 function useBirthdayCalendar(bdayStr) {
   // Click the date input to open the calendar
-  document.getElementById("gc-order-form-date-val").click();
+  document.querySelector('span[data-action="a-cal-icon"]').click();
 
   // Parse the current date and the target birthday date
   const currentDate = new Date();
@@ -94,7 +91,9 @@ function useBirthdayCalendar(bdayStr) {
 
   // Click the next month button the required number of times
   for (let i = 0; i < monthDiff; i++) {
-    document.getElementsByClassName("a-icon a-icon-next")[1].click();
+    document
+      .getElementsByClassName("a-declarative a-cal-paginate-next")[0]
+      .click();
   }
 }
 
@@ -119,19 +118,17 @@ function getTimestampFromBday(bdayStr, timeZoneOffsetInHours) {
 // Process and set document elements based on CSV data
 function processAndSetData(i) {
   const bdayData = dataArray[i];
-  document.getElementById("gc-order-form-recipients").value = bdayData.Email;
+  document.getElementById("gc-email-recipients").value = bdayData.Email;
 
   if (bdayData["B&G"] === "X") {
-    document.getElementById("gc-order-form-senderName").value =
-      "Grayson & Brendan";
+    document.getElementById("gc-from-input-Email").value = "Grayson & Brendan";
     document.getElementById(
-      "gc-order-form-message"
+      "gc-message-input-Email"
     ).value = `Happy Bday ${bdayData["First Name"]} from Grayson and Brendan`;
   } else {
-    document.getElementById("gc-order-form-senderName").value =
-      "Brendan OBrien";
+    document.getElementById("gc-from-input-Email").value = "Brendan OBrien";
     document.getElementById(
-      "gc-order-form-message"
+      "gc-message-input-Email"
     ).value = `Happy Bday ${bdayData["First Name"]} from Brendan O`;
   }
 
@@ -142,7 +139,7 @@ function processAndSetData(i) {
     document
       .getElementsByClassName(`a-cal-d a-cal-d-${bdayTimestamp}`)[0]
       .children[0].click();
-    document.getElementById("gc-buy-box-atc").click();
+    // document.getElementById("add-to-cart-button").click();
   }, calendarTimeoutTime);
 }
 
@@ -159,41 +156,17 @@ function fillFormAndSubmit() {
 
     if (!document.getElementById("gc-order-form-custom-amount")) {
       // Wait and try again
-      window.location.href = "https://www.amazon.com/gp/product/B0D1TK5XVL";
+      window.location.href = "https://www.amazon.com/dp/B0FLDMPWBR?th=1&gpo=20";
       incrementCounter();
-      setTimeout(fillFormAndSubmit, rerunScriptTimeoutTime);
       return;
     }
-
-    // Your code to set values and click the button
-    document.getElementById("gc-order-form-custom-amount").value = 20;
-
-    // This series of events allows the browser to focus on the custom amount input bar.
-    // This is the only way to un-click the default $50 value upon form submission
-    var evt = new MouseEvent("click", {
-      view: window,
-      bubbles: true,
-      clientX: 20,
-    });
-    let element = document.querySelector("#gc-order-form-custom-amount");
-    element.dispatchEvent(evt);
-
-    // Create a blur event
-    var blurEvt = new FocusEvent("blur");
-    // Dispatch the blur event
-    element.dispatchEvent(blurEvt);
-
-    // Then create a focus event
-    var focusEvt = new FocusEvent("focus");
-    // Dispatch the focus event
-    element.dispatchEvent(focusEvt);
 
     // BIG - fill out the form
     processAndSetData(counter);
 
     // This adds to cart
     setTimeout(() => {
-      document.getElementById("gc-buy-box-atc").click();
+      document.getElementById("add-to-cart-button").click();
     }, addToCardTimeoutTime);
   });
 }

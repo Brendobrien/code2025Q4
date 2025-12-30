@@ -1,10 +1,4 @@
-## Dec 29 2025 15:47 WITA
-
-104 + 2 B&G = 106
-
-## Jan 19 2025 12:26
-
-## Jan 21 2025 15:00
+# Amazon BDays 🎁
 
 ### 01 GET CSV
 
@@ -50,7 +44,7 @@ Click "Load Unpacked" from this folder
 C
 Make sure desktop not mobile
 Make sure redirect URL is correct
-Navigate to https://www.amazon.com/gp/product/B0D1TK5XVL
+Navigate to https://www.amazon.com/dp/B0FLDMPWBR?th=1&gpo=20
 Start Automation
 
 D
@@ -64,6 +58,64 @@ E
 Remove Extension
 Check the emails
 PURCHASE - move to next Q
+```
+
+# Archive 🗄️
+
+## Dec 30 2025 7:00-9:11 WITA
+
+```js
+URL NEW
+"https://www.amazon.com/dp/B0FLDMPWBR?th=1&gpo=20"
+URL OLD
+"https://www.amazon.com/gp/product/B0D1TK5XVL"
+
+Price NEW/OLD
+document.getElementById("gc-order-form-custom-amount").value = 20;
+
+Email NEW
+document.getElementById("gc-email-recipients").value = bdayData.Email;
+Email OLD
+document.getElementById("gc-order-form-recipients").value = bdayData.Email;
+
+Message NEW
+document.getElementById("gc-from-input-Email").value = "Brendan OBrien";
+document.getElementById(
+    "gc-message-input-Email"
+).value = `Happy Bday ${bdayData["First Name"]} from Brendan O`;
+Message OLD
+document.getElementById("gc-order-form-senderName").value =
+  "Brendan OBrien";
+document.getElementById(
+  "gc-order-form-message"
+).value = `Happy Bday ${bdayData["First Name"]} from Brendan O`;
+
+Date Picker NEW
+document.querySelector('span[data-action="a-cal-icon"]').click();
+Date Picker OLD
+document.getElementById("gc-order-form-date-val").click();
+
+Month Arrow NEW
+document.getElementsByClassName("a-declarative a-cal-paginate-next")[0].click();
+Month Arrow OLD
+document.getElementsByClassName("a-icon a-icon-next")[1].click();
+
+Date NEW/OLD
+document
+    .getElementsByClassName(`a-cal-d a-cal-d-${bdayTimestamp}`)[0]
+    .children[0].click();
+
+Submit NEW
+document.getElementById("add-to-cart-button").click();
+Submit OLD
+document.getElementById("gc-buy-box-atc").click();
+
+```
+
+### 6:00 WITA
+
+```
+104 + 2 B&G = 106
 ```
 
 ## Jan 21 2025 15:35
@@ -84,3 +136,7 @@ NOTE: Kevin forward this to Caroline for me.
 For some reason, her email "cactonATalumniDOTndDOTedu"
 wasn't being accepted by amazon's form validation.
 ```
+
+## Jan 21 2025 15:00
+
+## Jan 19 2025 12:26
